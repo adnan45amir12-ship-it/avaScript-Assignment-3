@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="ticketForm">
+
+            <input type="text" id="customerName"
+                   placeholder="Customer Name" required>
+
+            <input type="number" id="age"
+                   placeholder="Age" min="0" required>
+
+            <select id="departure" required>
+                <option value="">Departure Dropdown</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Multan">Multan</option>
+            </select>
+
+            <select id="arrival" required>
+                <option value="">Arrival Dropdown</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Multan">Multan</option>
+            </select>
+
+            <select id="profession" required>
+                <option value="">Profession</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Businessman">Businessman</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="ticketDetails">
+        <h1>TICKET DETAILS</h1>
+        <div id="ticketOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
